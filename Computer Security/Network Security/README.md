@@ -13,6 +13,7 @@ Part 2: Anomaly Detection:
   This portion of the project requires the development of a Python program (detector.py) that programmatically analyzes trace data (PCAP files) to identify suspicious behavior related to SYN scans. The goal is to detect       potential port scanning activities by comparing the number of SYN packets sent to the number of SYN+ACK packets received.
 
 Part 1:
-  attack.py: Python script executing the specified network attack.
+  - attack.py: Python script executing the specified network attack.
+  
 Part 2 Submission:
-  detector.py: Python program identifying SYN scan activities in PCAP files.
+  - detector.py: Python program identifying SYN scan activities in PCAP files.
