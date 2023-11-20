@@ -15,6 +15,7 @@ The project comprises two major parts:
     - Length Extension: Demonstrates the vulnerability in hash functions and explores how to exploit length extension attacks.
     - Hash Collisions: Investigates MD5 collisions and the potential vulnerabilities they pose.
     - Vigenère Cipher Analysis: Utilizes frequency analysis to break a Vigenère Cipher.
+    
   Part 2: Cryptanalysis Techniques
     - Solving Vigenère Ciphers: Implements a program to decrypt Vigenère ciphers using known cryptanalysis techniques.
 
