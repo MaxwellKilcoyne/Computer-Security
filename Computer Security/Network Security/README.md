@@ -15,5 +15,5 @@ Part 2: Anomaly Detection:
 Part 1:
   - attack.py: Python script executing the specified network attack.
   
-Part 2 Submission:
+Part 2:
   - detector.py: Python program identifying SYN scan activities in PCAP files.
